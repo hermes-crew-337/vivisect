@@ -135,10 +135,7 @@ class CobraBasicTest(unittest.TestCase):
     #def test_cobra_ssl(self):
     #def test_cobra_ssl_clientcert(self):
     def test_cobra_helpers(self):
-        try:
-            import msgpack
-        except ImportError:
-            self.skipTest('No msgpack installed!')
+        import msgpack
 
         portnum = itertools.count(60651)
 
